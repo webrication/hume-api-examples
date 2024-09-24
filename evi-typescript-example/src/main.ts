@@ -73,7 +73,7 @@ import './styles.css';
    */
   const mimeType: MimeType = (() => {
     const result = getBrowserSupportedMimeType();
-    return result.success ? result.mimeType : MimeType.WEBM;
+    return result.success ? result.mimeType : MimeType.WAV;
   })();
 
   /**
