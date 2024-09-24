@@ -73,7 +73,7 @@ import './styles.css';
    */
   const mimeType: MimeType = (() => {
     const result = getBrowserSupportedMimeType();
-    return result.success ? result.mimeType : MimeType.WAV;
+    return result.success ? result.mimeType : "audio/mp4";
   })();
 
   /**
@@ -186,7 +186,7 @@ import './styles.css';
     const audioUrl = URL.createObjectURL(audioBlob);
     currentAudio = new Audio(audioUrl);
 
-    // play audio
+    // play audiof
     currentAudio.play();
 
     // callback for when audio finishes playing
